@@ -1,0 +1,97 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: #172554;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 48%, #f8fafc 100%);
+}
+
+.weather-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.weather-card {
+  overflow: hidden;
+  border-radius: 1.4rem;
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.eyebrow {
+  color: #2563eb;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.weather-icon {
+  font-size: 4.5rem;
+  line-height: 1.1;
+}
+
+.temperature {
+  color: #0f172a;
+  font-size: clamp(4rem, 12vw, 6rem);
+  font-weight: 750;
+  letter-spacing: -0.07em;
+  line-height: 1.1;
+}
+
+.condition {
+  color: #475569;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.stat-box {
+  padding: 1rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.9rem;
+  background: #f8fafc;
+}
+
+.stat-box span,
+.stat-box strong {
+  display: block;
+}
+
+.stat-box span {
+  color: #64748b;
+  font-size: 0.88rem;
+}
+
+.stat-box strong {
+  margin-top: 0.35rem;
+  color: #0f172a;
+  font-size: 1.1rem;
+}
+
+.loading-state {
+  padding: 1rem;
+  color: #475569;
+  text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  .weather-page {
+    align-items: flex-start;
+  }
+
+  .weather-card .card-body {
+    padding: 1.5rem !important;
+  }
+}
